@@ -45,6 +45,8 @@ THEME_PNGS = [
 OPTIONAL_FILES = ["credits.txt"]
 REQUIRED = ["theme.json", "background.png", "monk-strip.png"]
 THUMB = "thumb.png"
+PREVIEW = "preview.png"
+GENERATED = [THUMB, PREVIEW]
 
 # Keep in sync with the plugin's download limits.
 MAX_FILE_BYTES = 8 * 1024 * 1024
@@ -114,24 +116,32 @@ def check_images(theme_dir, errors):
                 fail(errors, tid, f"{name} must be a 60-frame vertical filmstrip, is {w}x{h}")
 
 
-def make_thumb(theme_dir):
+def png_bytes(image):
+    buf = io.BytesIO()
+    image.convert("RGB").save(buf, "PNG", optimize=True)
+    return buf.getvalue()
+
+
+def make_preview(theme_dir):
+    """The whole 360x510 editor as the plugin draws it idle: the background
+    with the monk's idle frame on top."""
     bg = Image.open(theme_dir / "background.png").convert("RGBA")
     strip = Image.open(theme_dir / "monk-strip.png").convert("RGBA")
-
     col, row = divmod(IDLE_FRAME, 6)
     frame = strip.crop((col * COLUMN, row * FRAME, col * COLUMN + FRAME, (row + 1) * FRAME))
     full = bg.copy()
     full.alpha_composite(frame, MONK_ORIGIN)
+    return full
 
+
+def make_thumb(full):
     w = round(full.size[0] * THUMB_SCALE)
     h = round(full.size[1] * THUMB_SCALE)
     scaled = full.resize((w, h), Image.LANCZOS)
     thumb = Image.new("RGBA", (THUMB_SIZE, THUMB_SIZE), (14, 13, 11, 255))
     left, top = -BG_OFFSET[0], -BG_OFFSET[1]
     thumb.alpha_composite(scaled, (0, 0), (left, top, left + THUMB_SIZE, top + THUMB_SIZE))
-    buf = io.BytesIO()
-    thumb.convert("RGB").save(buf, "PNG", optimize=True)
-    return buf.getvalue()
+    return png_bytes(thumb)
 
 
 def file_entry(path, data=None):
@@ -150,9 +160,9 @@ def build(check):
             fail(errors, tid, "folder name must be lowercase letters, digits and dashes (max 40)")
             continue
         names = {p.name for p in theme_dir.iterdir() if not p.name.startswith(".")}
-        allowed = set(THEME_PNGS + OPTIONAL_FILES + ["theme.json", THUMB])
+        allowed = set(THEME_PNGS + OPTIONAL_FILES + ["theme.json"] + GENERATED)
         for extra in sorted(names - allowed):
-            fail(errors, tid, f"unexpected file '{extra}' (allowed: {', '.join(sorted(allowed - {THUMB}))})")
+            fail(errors, tid, f"unexpected file '{extra}' (allowed: {', '.join(sorted(allowed - set(GENERATED)))})")
         missing = [r for r in REQUIRED if r not in names]
         if missing:
             fail(errors, tid, f"missing {', '.join(missing)}")
@@ -163,12 +173,14 @@ def build(check):
             continue
         check_images(theme_dir, errors)
 
-        thumb = make_thumb(theme_dir)
-        thumb_path = theme_dir / THUMB
-        if not thumb_path.exists() or thumb_path.read_bytes() != thumb:
-            stale.append(str(thumb_path.relative_to(ROOT)))
-            if not check:
-                thumb_path.write_bytes(thumb)
+        full = make_preview(theme_dir)
+        generated = {THUMB: make_thumb(full), PREVIEW: png_bytes(full)}
+        for name, data in generated.items():
+            path = theme_dir / name
+            if not path.exists() or path.read_bytes() != data:
+                stale.append(str(path.relative_to(ROOT)))
+                if not check:
+                    path.write_bytes(data)
 
         files = []
         for name in ["theme.json"] + THEME_PNGS + OPTIONAL_FILES:
@@ -184,7 +196,8 @@ def build(check):
 
         entry = {"id": tid}
         entry.update({k: v for k, v in meta.items() if v})
-        entry["thumb"] = file_entry(thumb_path, thumb)
+        entry["thumb"] = file_entry(theme_dir / THUMB, generated[THUMB])
+        entry["preview"] = file_entry(theme_dir / PREVIEW, generated[PREVIEW])
         entry["size"] = total
         entry["files"] = files
         themes.append(entry)

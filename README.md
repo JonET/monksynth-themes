@@ -14,7 +14,7 @@ Download a folder from [`themes/`](themes/) and copy it into MonkSynth's themes 
 
 1. Build your theme in the themes folder above so you can try it in the plugin as you go.
 2. Fork this repo and add your folder as `themes/<your-theme>/`. The folder name is the theme's id: lowercase letters, digits and dashes.
-3. Open a pull request. A check validates the folder. You don't need to touch `index.json` or make a thumbnail; both are generated after merge.
+3. Open a pull request. A check validates the folder. You don't need to touch `index.json` or make a thumbnail or preview image; they're generated after merge.
 
 Only submit art you made or have the right to share.
 
@@ -48,7 +48,7 @@ Bump `version` when you update a theme; the gallery offers the update to people 
 
 ## How the gallery reads this repo
 
-`index.json` lists every theme with its metadata, thumbnail and files (size and SHA-256). The plugin fetches it and the files from `raw.githubusercontent.com` on the `main` branch, and only downloads the file names listed above. `scripts/build_index.py` validates the themes and regenerates the index and thumbnails; CI runs it on every pull request (validate only) and on every push to `main` (rebuild and commit).
+`index.json` lists every theme with its metadata, thumbnail, preview and files (size and SHA-256). The plugin fetches it and the files from `raw.githubusercontent.com` on the `main` branch, and only downloads the file names listed above. `scripts/build_index.py` validates the themes and regenerates the index and thumbnails; CI runs it on every pull request (validate only) and on every push to `main` (rebuild and commit).
 
 ## Credits and takedowns
 

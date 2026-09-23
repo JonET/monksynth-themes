@@ -13,6 +13,11 @@
         "size": 22328,
         "sha256": "aa3692c7550a2c50b3adc790f956b4e0939e5a4f92361c6028b5d2d3365afe94"
       },
+      "preview": {
+        "name": "preview.png",
+        "size": 217609,
+        "sha256": "7520460fc8596105caafbcd627359c2d2b0a91b16217c11e0c1cd6921a36d1ad"
+      },
       "size": 4220974,
       "files": [
         {
@@ -73,6 +78,11 @@
         "size": 23632,
         "sha256": "285469cf01d92ca59c415ba2f75767424b6ff0c07d94f16a20f59d71606d1d82"
       },
+      "preview": {
+        "name": "preview.png",
+        "size": 115377,
+        "sha256": "761948956b1549641d47d4cb19e0e9cc1b5d6310b97e7daf467e4b24f6603092"
+      },
       "size": 1062983,
       "files": [
         {
@@ -131,8 +141,13 @@
       "url": "https://www.youtube.com/watch?v=IiDQwQQsrL8",
       "thumb": {
         "name": "thumb.png",
-        "size": 10437,
-        "sha256": "6b467748fea9949c99981b829d531ac4927c1ee9fd87fef90a8f5a33bf61044d"
+        "size": 10408,
+        "sha256": "2023eabb750757d7bffedcdba2e5988a0df9637263639cc417ab76506e6ee385"
+      },
+      "preview": {
+        "name": "preview.png",
+        "size": 97331,
+        "sha256": "4e659f50766a07c71c61e3bb5d7faf45a5fbb70feea48c1069ecb2f8776f47b8"
       },
       "size": 1527570,
       "files": [
