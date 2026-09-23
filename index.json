@@ -15,8 +15,8 @@
       },
       "preview": {
         "name": "preview.png",
-        "size": 218263,
-        "sha256": "0f9426f374b9c65315a87d905f1b9d87d717d329859cf3f7f8dea36426af01c9"
+        "size": 217609,
+        "sha256": "7520460fc8596105caafbcd627359c2d2b0a91b16217c11e0c1cd6921a36d1ad"
       },
       "size": 4220974,
       "files": [
@@ -80,8 +80,8 @@
       },
       "preview": {
         "name": "preview.png",
-        "size": 116319,
-        "sha256": "5c99fdd3780b69184b22911b5b3c74896bcb281a21868aac1ff60b762a3b9f06"
+        "size": 115377,
+        "sha256": "761948956b1549641d47d4cb19e0e9cc1b5d6310b97e7daf467e4b24f6603092"
       },
       "size": 1062983,
       "files": [
@@ -133,6 +133,72 @@
       ]
     },
     {
+      "id": "jevilmonk",
+      "name": "JevilMonk",
+      "author": "HuntMoped",
+      "version": "1.0",
+      "description": "Jevil but monk! model by VibaPop.",
+      "url": "https://sketchfab.com/3d-models/deltarune-037d273d617644a09d5b23b738b03d2b",
+      "thumb": {
+        "name": "thumb.png",
+        "size": 20772,
+        "sha256": "b69b72a21b49bb3898524977e82d8d5d91d73ec2dee1d3c553ac988761dfc91e"
+      },
+      "preview": {
+        "name": "preview.png",
+        "size": 209823,
+        "sha256": "58e63aa7ca420a617565c447305f1f9ab6e62ea156cd1232812cdf203a3ebe55"
+      },
+      "size": 3887260,
+      "files": [
+        {
+          "name": "theme.json",
+          "size": 217,
+          "sha256": "b11e38a5592f4e83e001e95471281ade99312236b7b25ea08229953f8dcbd617"
+        },
+        {
+          "name": "background.png",
+          "size": 173755,
+          "sha256": "4d84beb6b9129782189135996b626a9038152ffd1fad94c25c579ee5adee27fc"
+        },
+        {
+          "name": "monk-strip.png",
+          "size": 3502676,
+          "sha256": "9be3ef85bf10f244482dd2af2b3dca1795dbf018e6e7b7504a2a9e0d3794a47d"
+        },
+        {
+          "name": "knob-left.png",
+          "size": 30844,
+          "sha256": "7ee18f7ca2afd5d73443ff1289d0f6db0db057e787a772010567acd9d5cb75de"
+        },
+        {
+          "name": "knob-right.png",
+          "size": 30844,
+          "sha256": "7ee18f7ca2afd5d73443ff1289d0f6db0db057e787a772010567acd9d5cb75de"
+        },
+        {
+          "name": "fader-down-large.png",
+          "size": 145,
+          "sha256": "e1735e77badde02a4a892138b05160b5bf0e736928c720ffd87ff97b62219c8a"
+        },
+        {
+          "name": "fader-down-sm.png",
+          "size": 127,
+          "sha256": "5ec7686b1e3335552582b88ddc5a0389603b8fcea9785c341d3d6f4fb6471b8d"
+        },
+        {
+          "name": "fader-right-sm.png",
+          "size": 129,
+          "sha256": "8170de14439e393eb54cafa5e5e7ce2475ca422201d8caaf4fa1ea208b33e975"
+        },
+        {
+          "name": "info.png",
+          "size": 148523,
+          "sha256": "cc759394e0c8e954985cf9a631d0ac12ec7ec9964d6af31b40c1dcfb6e52be80"
+        }
+      ]
+    },
+    {
       "id": "smileyface",
       "name": "Smiley Face...",
       "author": "gav",
@@ -141,13 +207,13 @@
       "url": "https://www.youtube.com/watch?v=IiDQwQQsrL8",
       "thumb": {
         "name": "thumb.png",
-        "size": 10437,
-        "sha256": "6b467748fea9949c99981b829d531ac4927c1ee9fd87fef90a8f5a33bf61044d"
+        "size": 10408,
+        "sha256": "2023eabb750757d7bffedcdba2e5988a0df9637263639cc417ab76506e6ee385"
       },
       "preview": {
         "name": "preview.png",
-        "size": 98275,
-        "sha256": "beb75817cf151eed64a9d462dba45898e8efa339d910db8f2fbc808fb3cf7e77"
+        "size": 97331,
+        "sha256": "4e659f50766a07c71c61e3bb5d7faf45a5fbb70feea48c1069ecb2f8776f47b8"
       },
       "size": 1527570,
       "files": [
