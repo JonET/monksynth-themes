@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "themes": [
+    {
+      "id": "classic",
+      "name": "Classic Delay Lama",
+      "author": "AudioNerdz",
+      "version": "1.0",
+      "description": "Artwork extracted from the original Delay Lama VST plugin (2002).",
+      "url": "http://www.audionerdz.nl/",
+      "thumb": {
+        "name": "thumb.png",
+        "size": 22328,
+        "sha256": "aa3692c7550a2c50b3adc790f956b4e0939e5a4f92361c6028b5d2d3365afe94"
+      },
+      "size": 4220974,
+      "files": [
+        {
+          "name": "theme.json",
+          "size": 205,
+          "sha256": "5c8c0be858fc69e0a11c25523c743159f1987cb208476f88ac64fdb82f089ba0"
+        },
+        {
+          "name": "background.png",
+          "size": 294743,
+          "sha256": "ab95d1e83648a47cfef16583c73ba0ec2231797f8cae7c17bec3cf640d5fb925"
+        },
+        {
+          "name": "monk-strip.png",
+          "size": 3431929,
+          "sha256": "3d3afb20266cb96d3cb241a98734f1a36c14d2a23630a10a7480370136e9be34"
+        },
+        {
+          "name": "knob-left.png",
+          "size": 170582,
+          "sha256": "ef546d736ff8c7f1be60aa476d35528d4c37dcaa3610c740fd6d6ddbd613621e"
+        },
+        {
+          "name": "knob-right.png",
+          "size": 173439,
+          "sha256": "e3343911b0eb5713dcaf059ee45b3e2f691c826e97ce92ccc9a5662bf4dbca41"
+        },
+        {
+          "name": "fader-down-large.png",
+          "size": 905,
+          "sha256": "2c7aeb28e2faaf603fd08d515a052e7f2df62b61d6dd8535329443e61bd9e5f4"
+        },
+        {
+          "name": "fader-down-sm.png",
+          "size": 327,
+          "sha256": "375d43b5a58a17c0526e8fb7f5041d7af57129cb2f9f6c222e13b6220139987a"
+        },
+        {
+          "name": "fader-right-sm.png",
+          "size": 321,
+          "sha256": "6523475ffba23035c3753a38f04fbf0ad81c6604e01318145787906ff34d23ea"
+        },
+        {
+          "name": "info.png",
+          "size": 148523,
+          "sha256": "cc759394e0c8e954985cf9a631d0ac12ec7ec9964d6af31b40c1dcfb6e52be80"
+        }
+      ]
+    },
+    {
+      "id": "dithered",
+      "name": "Dithered",
+      "author": "HuntMoped",
+      "version": "1.0",
+      "description": "A simple theme made to be very simplistic but also stylized, i'm more inspired by old renders more than anything but i just like bizarre shapes.",
+      "thumb": {
+        "name": "thumb.png",
+        "size": 23632,
+        "sha256": "285469cf01d92ca59c415ba2f75767424b6ff0c07d94f16a20f59d71606d1d82"
+      },
+      "size": 1062983,
+      "files": [
+        {
+          "name": "theme.json",
+          "size": 234,
+          "sha256": "fafdeb2234722b13eea306ef96d286eec59403e2ef138076e74db232ddeb9a3e"
+        },
+        {
+          "name": "background.png",
+          "size": 132853,
+          "sha256": "98ac53003dfe30e62f4c1345fcbefd48a9b741edb27384854a3b892df4ec4cc6"
+        },
+        {
+          "name": "monk-strip.png",
+          "size": 866506,
+          "sha256": "245b5d8834cf04bdf5d71b9b279eda0663345b4cd2c307309b54ffea1850f9ab"
+        },
+        {
+          "name": "knob-left.png",
+          "size": 30844,
+          "sha256": "7ee18f7ca2afd5d73443ff1289d0f6db0db057e787a772010567acd9d5cb75de"
+        },
+        {
+          "name": "knob-right.png",
+          "size": 30844,
+          "sha256": "7ee18f7ca2afd5d73443ff1289d0f6db0db057e787a772010567acd9d5cb75de"
+        },
+        {
+          "name": "fader-down-large.png",
+          "size": 193,
+          "sha256": "331ce9c6c210fa5c7b61e9e5b1f3ce57350be21d866e4040d38bb36bd4569040"
+        },
+        {
+          "name": "fader-down-sm.png",
+          "size": 135,
+          "sha256": "87374eea85ff1426651a9260c49401c5afad922be6d6e0e339c7bff3afb60add"
+        },
+        {
+          "name": "fader-right-sm.png",
+          "size": 145,
+          "sha256": "2748ad3ee53169e6770685a0edde94f7b3f1ea46a4f6e11c5cf84214b4a088ae"
+        },
+        {
+          "name": "info.png",
+          "size": 1229,
+          "sha256": "52dc089bd506654c8bf9e4ba0f1d3b34584f294bd2c09d67969a4decb9d1ff77"
+        }
+      ]
+    },
+    {
+      "id": "smileyface",
+      "name": "Smiley Face...",
+      "author": "gav",
+      "version": "1.0",
+      "description": "MS Paint smiley in a Windows XP window, inspired by the classic YouTube video 'Green Day - Boulevard of Broken Dreams - Smiley Face...' by kentdoddsproductions.",
+      "url": "https://www.youtube.com/watch?v=IiDQwQQsrL8",
+      "thumb": {
+        "name": "thumb.png",
+        "size": 10408,
+        "sha256": "2023eabb750757d7bffedcdba2e5988a0df9637263639cc417ab76506e6ee385"
+      },
+      "size": 1527570,
+      "files": [
+        {
+          "name": "theme.json",
+          "size": 307,
+          "sha256": "c5dde664d3b862f61a013c3f10347f9860a3f13a26af363a03740d1f78d71397"
+        },
+        {
+          "name": "background.png",
+          "size": 105610,
+          "sha256": "563b00c21cc2875630cdaee4719dafa0fc004e079784f49990774417a5fb1645"
+        },
+        {
+          "name": "monk-strip.png",
+          "size": 902652,
+          "sha256": "da35a9931f140718120c0b55673cd6e65831723fe91728bd70c3d60b23f2d95f"
+        },
+        {
+          "name": "knob-left.png",
+          "size": 235020,
+          "sha256": "2591265e68c2e82e2da66f5db0f3714435dec1adb99db01a9e85bff067cfe3f9"
+        },
+        {
+          "name": "knob-right.png",
+          "size": 235873,
+          "sha256": "c9c01f7513edb47ff41744fc913dbb2cdaddf2abea575500d814a7392a00a6d1"
+        },
+        {
+          "name": "fader-down-large.png",
+          "size": 749,
+          "sha256": "8b592490a2a68d491de369eb5cf84afb2fa9b715099999107d174f1b1830c25d"
+        },
+        {
+          "name": "fader-down-sm.png",
+          "size": 522,
+          "sha256": "fc28da75be4e905270593e95e3f49e531df8411e6f72ae8b808c789825658079"
+        },
+        {
+          "name": "fader-right-sm.png",
+          "size": 522,
+          "sha256": "fe06d25647e70eb23bd30f8e1e89e1934a784c710a7c53a9b8868e9669e63315"
+        },
+        {
+          "name": "info.png",
+          "size": 45715,
+          "sha256": "ff180d18165f664799ef1372f0c3534935dd1ad8331857e99904402a4fa61921"
+        },
+        {
+          "name": "credits.txt",
+          "size": 600,
+          "sha256": "832eb7868b64ffd6b521d006303edf3d870a7fdb77863f01fddc04fe6bd880c8"
+        }
+      ]
+    }
+  ]
+}
