@@ -15,8 +15,8 @@
       },
       "preview": {
         "name": "preview.png",
-        "size": 217609,
-        "sha256": "7520460fc8596105caafbcd627359c2d2b0a91b16217c11e0c1cd6921a36d1ad"
+        "size": 218263,
+        "sha256": "0f9426f374b9c65315a87d905f1b9d87d717d329859cf3f7f8dea36426af01c9"
       },
       "size": 4220974,
       "files": [
@@ -80,8 +80,8 @@
       },
       "preview": {
         "name": "preview.png",
-        "size": 115377,
-        "sha256": "761948956b1549641d47d4cb19e0e9cc1b5d6310b97e7daf467e4b24f6603092"
+        "size": 116319,
+        "sha256": "5c99fdd3780b69184b22911b5b3c74896bcb281a21868aac1ff60b762a3b9f06"
       },
       "size": 1062983,
       "files": [
@@ -141,13 +141,13 @@
       "url": "https://sketchfab.com/3d-models/deltarune-037d273d617644a09d5b23b738b03d2b",
       "thumb": {
         "name": "thumb.png",
-        "size": 20772,
-        "sha256": "b69b72a21b49bb3898524977e82d8d5d91d73ec2dee1d3c553ac988761dfc91e"
+        "size": 20777,
+        "sha256": "d88df5772f3ab17706f595f7bf93e39f950d0aa12371ec5c467bbeaa3af562eb"
       },
       "preview": {
         "name": "preview.png",
-        "size": 209823,
-        "sha256": "58e63aa7ca420a617565c447305f1f9ab6e62ea156cd1232812cdf203a3ebe55"
+        "size": 210121,
+        "sha256": "7f5ce59601b6a61c2a07ab00f203c71f58020740a47acaf3a00e3359d87423ca"
       },
       "size": 3887260,
       "files": [
@@ -207,13 +207,13 @@
       "url": "https://www.youtube.com/watch?v=IiDQwQQsrL8",
       "thumb": {
         "name": "thumb.png",
-        "size": 10408,
-        "sha256": "2023eabb750757d7bffedcdba2e5988a0df9637263639cc417ab76506e6ee385"
+        "size": 10437,
+        "sha256": "6b467748fea9949c99981b829d531ac4927c1ee9fd87fef90a8f5a33bf61044d"
       },
       "preview": {
         "name": "preview.png",
-        "size": 97331,
-        "sha256": "4e659f50766a07c71c61e3bb5d7faf45a5fbb70feea48c1069ecb2f8776f47b8"
+        "size": 98275,
+        "sha256": "beb75817cf151eed64a9d462dba45898e8efa339d910db8f2fbc808fb3cf7e77"
       },
       "size": 1527570,
       "files": [
