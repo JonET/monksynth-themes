@@ -1,0 +1,35 @@
+name: Theme index
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+
+      - name: Validate themes
+        if: github.event_name == 'pull_request'
+        run: python scripts/build_index.py --check
+
+      - name: Rebuild index and thumbnails
+        if: github.event_name == 'push'
+        run: |
+          python scripts/build_index.py
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.json themes
+            git commit -m "Rebuild theme index"
+            git push
+          fi
